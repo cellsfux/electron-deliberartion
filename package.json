@@ -1,0 +1,40 @@
+{
+  "name": "isp_resultat",
+  "version": "1.0.0",
+  "description": "application pour la publication des resultat",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-rebuild -f -w sqlite3",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gracejison/isp_result.git"
+  },
+  "keywords": [
+    "isp"
+  ],
+  "author": "jison nongolola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gracejison/isp_result/issues"
+  },
+  "homepage": "https://github.com/gracejison/isp_result#readme",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-rebuild": "^3.2.9"
+  },
+  "dependencies": {
+    "knex": "^2.3.0",
+    "sqlite3": "^5.1.2",
+    "xlsx": "^0.18.5"
+  },
+  "electronWebpack": {
+    "main": {
+      "extraEntries": [
+        "@/preload.js"
+      ]
+    }
+  }
+}

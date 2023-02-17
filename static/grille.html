@@ -1,0 +1,515 @@
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="utf-8" />
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- DataTables -->
+        <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Responsive datatable examples -->
+        <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />     
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="assets/libs/toastr/build/toastr.min.css">
+      
+
+    </head>
+
+    <body data-sidebar="light" data-layout-mode="light" class="sidebar-enable vertical-collpsed">
+
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo.svg" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-dark.png" alt="" height="17">
+                                </span>
+                            </a>
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-light.svg" alt="" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="" height="19">
+                                </span>
+                            </a>
+                        </div>
+
+                       <!--- <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>-->
+
+                        <!-- App Search-->
+                        <form class="app-search d-none d-lg-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="bx bx-search-alt"></span>
+                            </div>
+                        </form>
+
+                      
+                    </div>
+
+                    <div class="d-flex">
+
+                        <div class="dropdown d-inline-block d-lg-none ms-2">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-search-dropdown">
+        
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img id="header-lang-img" src="assets/images/flags/us.jpg" alt="Header Language" height="16">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="en">
+                                    <img src="assets/images/flags/us.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">English</span>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp">
+                                    <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr">
+                                    <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it">
+                                    <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
+                                    <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-none d-lg-inline-block ms-1">
+                            <button type="button" class="btn header-item noti-icon waves-effect"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-customize"></i>
+                            </button>
+
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
+                                <div class="px-lg-2">
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <a class="dropdown-icon-item" href="#">
+                                                <img src="assets/images/brands/github.png" alt="Github">
+                                                <span>Gestion agents</span>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="dropdown-icon-item" href="#">
+                                                <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
+                                                <span>Inscription</span>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="dropdown-icon-item" href="#">
+                                                <img src="assets/images/brands/dribbble.png" alt="dribbble">
+                                                <span>paiement fret </span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <a class="dropdown-icon-item" href="#">
+                                                <img src="assets/images/brands/dropbox.png" alt="dropbox">
+                                                <span>Sms</span>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="dropdown-icon-item" href="#">
+                                                <img src="assets/images/brands/mail_chimp.png" alt="mail_chimp">
+                                                <span>Mail </span>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <a class="dropdown-icon-item" href="#">
+                                                <img src="assets/images/brands/slack.png" alt="slack">
+                                                <span>Stockage</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-none d-lg-inline-block ms-1">
+                            <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
+                                <i class="bx bx-fullscreen"></i>
+                            </button>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-bell bx-tada"></i>
+                                <span class="badge bg-danger rounded-pill">1</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0" key="t-notifications"> Notifications </h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#!" class="small" key="t-view-all"> View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="table_notifications" data-simplebar style="max-height: 230px;">
+
+                                
+                                    
+
+                                  
+                                </div>
+                                <div class="p-2 border-top d-grid">
+                                    <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                        <i class="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">View More..</span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                   
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ms-1" key="t-henry">Acount</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">Profile</span></a>
+                                <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle me-1"></i> <span key="t-my-wallet">My Wallet</span></a>
+                                <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end">11</span><i class="bx bx-wrench font-size-16 align-middle me-1"></i> <span key="t-settings">Settings</span></a>
+                                <a class="dropdown-item" href="#"><i class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span key="t-lock-screen">Lock screen</span></a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
+                            </div>
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== Left Sidebar Start ========== -->
+           
+            <!-- Left Sidebar End -->
+
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+            
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                    <h4 class="mb-sm-0 font-size-18" id="title"></h4>
+            
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="index.html">Cellsflux</a></li>
+                                            <li class="breadcrumb-item active">Grilles</li>
+                                        </ol>
+                                    </div>
+            
+                                </div>
+                                <div class="py-3 d-flex">
+                                    <button class="btn btn-success m-2"  data-bs-toggle="modal" data-bs-target="#add_grille_modale">
+                                        <i class="bx bx-food-menu h2 text"> </i>
+                                        Ajouter une Grille</button>
+
+                                        <div style="border:2px solid black;border-radius:3px;padding:5px;display:inline-block" draggable="true" id="drag">Déplacez-moi</div>
+
+    
+                                        <a href="" class="btn btn-success m-2">Actualiser</a>
+    
+                                        <div  class="text-center fw-bold m-2 h5" id="counter_grille">Total grilles </div>
+                                   </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="modal fade" id="add_grille_modale"  tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false"  aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable  ">
+                                <form id="add_grille" class="custom-validation modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-success" id="exampleModalScrollableTitle">
+                                            <i class="bx bx-food-menu h2 text"> </i> Ajouter une promotion</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+                                       
+        
+                                        <div class="mb-3">
+                                            <label>Le nom de la grille de points</label>
+                                            <div>
+                                                <input type="text" id="name_grille" class="form-control" required="" data-parsley-length="[2,200]" placeholder="Le nom de la grille de points peut prendre de 2 à 200 carractères">
+                                            </div>
+                                        </div>
+        
+                                       
+                                                
+        
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-success">Enregister</button>
+                                        </div>
+                                </form><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+        
+                        <!-- end page title -->
+            
+                        <div class="row" id="Grille_liste_data_lista">
+
+
+
+
+
+                          
+            
+            
+                          
+            
+                          
+                        </div>
+                        <!-- end row -->
+            
+                      
+                        <!-- end row -->
+                        
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+            
+
+          
+
+        </div>
+        <!-- END layout-wrapper -->
+
+
+
+
+
+
+
+        <!-- SUppression-->
+        <div class="modal fade" id="delete_grille" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  
+                    <div class="modal-body">
+
+                        <div class="d-flex justify-content-center align-items-center">
+                       
+                            <?xml  version="1.0" encoding="iso-8859-1"?>
+                            <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg width="100px" height="100px"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                            <g>
+                                <g id="question_x5F_mark">
+                                    <g>
+                                        <path style="fill:red;" d="M17.6,30c0,1.102-0.895,2-2,2s-2-0.898-2-2c0-1.109,0.895-2,2-2S17.6,28.891,17.6,30z"/>
+                                        <path style="fill:red;" d="M15.676,25.977c-1.336,0-2.59-0.523-3.535-1.469c-0.945-1.105-1.465-2.359-1.465-3.695
+                                            s0.52-2.59,1.465-3.371l6.688-6.688C19.584,9.996,20,8.992,20,7.926c0-1.07-0.416-2.074-1.172-2.828
+                                            c-1.559-1.559-4.096-1.562-5.654,0C12.416,5.852,12,6.855,12,7.926H8c0-2.137,0.834-4.148,2.348-5.66
+                                            c3.02-3.023,8.285-3.02,11.309,0.004C23.168,3.777,24,5.785,24,7.926c0,2.137-0.832,4.145-2.344,5.656l-6.688,6.523
+                                            c-0.389,0.391-0.389,1.023,0,1.414c0.391,0.391,1.023,0.391,1.414,0c0.254-0.258,0.293-0.555,0.293-0.711h4
+                                            c0,1.336-0.52,2.594-1.465,3.699C18.266,25.453,17.012,25.977,15.676,25.977L15.676,25.977z"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            </svg>
+
+                            </div>
+
+                            <h5> 
+                             Etes vous sur de vouloir supprimer cette grille ?</h5>
+                        <p>En suppriment cette grille toutes  les informations inscrites  serons perdues, Rassurez-vous d'avaoir déjà exporter  !</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success"  data-bs-dismiss="modal">Non</button>
+                        <button type="button" id="delete_griller_btn" data-id="" class="btn btn-danger">Oui</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
+
+
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+       
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/parsleyjs/parsley.min.js"></script>
+        <script src="assets/js/pages/form-validation.init.js"></script>
+
+
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+       
+
+        <!-- Required datatable js -->
+        <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <!-- Buttons examples -->
+     
+        <script src="assets/libs/jszip/jszip.min.js"></script>
+        <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+        <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+        
+        <!-- Responsive examples -->
+        <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+        <!-- Datatable init js -->
+        
+        <script src="assets/js/pages/datatables.init.js"></script>    
+
+          <!-- Datatable init js -->
+        
+          <script src="assets/libs/toastr/build/toastr.min.js"></script>
+
+          <!-- toastr init -->
+          <script src="assets/js/pages/toastr.init.js"></script>
+    
+
+        <script src="assets/js/app.js"></script>
+
+          <script src="./js.js"> </script>
+         
+
+
+
+
+    </body>
+</html>

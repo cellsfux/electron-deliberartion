@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ 
+     
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body >
+
+  
+            
+
+
+
+
+
+
+
+
+
+    <div class="main-content d-flex justify-content-center ">
+
+        <div class="page-content">
+            <div class="container-fluid" >
+
+               
+
+    <div class="col-xl-6" style="margin:auto ;">
+        <div class="card">
+            <div class="card-body" >
+    
+                <h4 class="card-title">Range validation</h4>
+                <a href="" id="resour" class="btn btn-primary">Reours</a>
+                <p class="card-title-desc">Parsley is a javascript form validation
+                    library. It helps you provide your users with feedback on their form
+                    submission before sending it to your server.</p>
+    
+                <form action="#" class="custom-validation">
+    
+                    <div class="mb-3">
+                        <label>Nom de l'étudiant</label>
+                        <div>
+                            <input type="text" class="form-control" required="" data-parsley-length="[2,10]" placeholder="Le nom de l'étudiant peut prendre de 2 à 20 carractères">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Post nom (et prenom)</label>
+                        <div>
+                            <input type="text" class="form-control" required="" data-parsley-length="[2,30]" placeholder="Le post nom de l'étudiant peut prendre de 2 à 30 carractères">
+                        </div>
+                    </div>
+    
+                    <div class="d-flex flex-wrap gap-2">
+                        <button type="submit" class="btn btn-primary waves-effect waves-light">
+                            Submit
+                        </button>
+                        <button type="reset" class="btn btn-secondary waves-effect">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+    
+            </div>
+        </div>
+    </div> <!-- end col -->
+    </div> <!-- end row -->
+</div>
+</div>
+</div>
+    
+    </div> <!-- container-fluid -->
+    </div>
+
+
+    
+    
+    
+    
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/parsleyjs/parsley.min.js"></script>
+    <script src="assets/js/pages/form-validation.init.js"></script>
+    <script src="./js.js"> </script>
+
+    <script>
+        //console.log(window.location.toString())
+
+         var url_string = window.location.toString(); 
+         var url = new URL(url_string);
+            var data= url.searchParams.get("id_grille");
+           console.log(data)
+            
+         
+            $('#resour').attr('href', `./table.html?id_grille=${data}`)
+
+        
+       </script>
+    
+    
+</body>
+</html>
